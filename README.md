@@ -29,13 +29,13 @@ You select "Nap", the screen fades out and back in, and it's 8:20 AM with full e
 ## Install
 
 1. Install [SMAPI](https://smapi.io/)
-2. Install [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) (optional, for in-game settings)
+2. Install [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) (optional, for in-game settings — Android users may prefer the [controller-enabled fork](https://github.com/sonofskywalker3/GenericModConfigMenu/releases))
 3. Drop the `NapTime` folder into your `Mods` directory
 4. Launch the game through SMAPI
 
 ## Configuration
 
-All settings are configurable via [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) or by editing `config.json`:
+All settings are configurable via [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) (or the [controller-enabled fork](https://github.com/sonofskywalker3/GenericModConfigMenu/releases)) or by editing `config.json`:
 
 | Setting | Default | Description |
 |---------|---------|-------------|
