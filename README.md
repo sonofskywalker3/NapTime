@@ -4,7 +4,7 @@ A [Stardew Valley](https://www.stardewvalley.net/) mod that lets you nap in bed 
 
 ## What It Does
 
-In vanilla Stardew Valley, if you pass out in the mines or stay up too late, you wake up the next morning with reduced energy and no way to get it back — your only option is to push through the day at half stamina.
+In vanilla Stardew Valley, if you pass out in the mines or stay up too late, you wake up the next morning with reduced energy and there's no free way to get it back — your only option is to spend your money, spend time looking for forageables, or push through the day at half stamina. This can really suck in the early game.
 
 **Nap Time** adds a third option to the bed interaction dialogue: instead of just "Go to bed" or "Cancel", you can choose to **nap until a calculated wake-up time** and regain your missing energy. The game fades out, advances time, restores your stamina, and fades back in. No waiting around, no ending the day early — just a quick nap and back to work.
 
