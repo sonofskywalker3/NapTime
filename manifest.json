@@ -1,0 +1,16 @@
+{
+    "Name": "Nap Time",
+    "Author": "sonofskywalker3",
+    "Version": "1.0.0",
+    "Description": "Sleep in your bed to regain energy by napping until a calculated wake-up time, instead of ending the day.",
+    "UniqueID": "sonofskywalker3.NapTime",
+    "EntryDll": "NapTime.dll",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": [],
+    "Dependencies": [
+        {
+            "UniqueID": "spacechase0.GenericModConfigMenu",
+            "IsRequired": false
+        }
+    ]
+}
