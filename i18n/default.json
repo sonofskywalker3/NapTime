@@ -1,0 +1,13 @@
+{
+    "config.enable-napping.name": "Enable Napping",
+    "config.enable-napping.tooltip": "Show the nap option when interacting with a bed while missing energy.",
+
+    "config.minutes-per-stamina.name": "Minutes Per Stamina",
+    "config.minutes-per-stamina.tooltip": "How many in-game minutes of nap per stamina point restored. Higher = slower recovery. Default: 1.0 (135 missing stamina = ~2h20m nap).",
+
+    "config.max-wake-up-time.name": "Latest Wake-Up Time",
+    "config.max-wake-up-time.tooltip": "Latest time a nap can extend to (24h format: 1200 = noon, 1800 = 6PM). Nap is capped at this time with partial energy recovery.",
+
+    "nap-label.capped": "Nap until {{time}} (regain {{percent}}% energy)",
+    "nap-label.full": "Nap until {{time}} (regain full energy)"
+}

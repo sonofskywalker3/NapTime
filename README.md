@@ -55,6 +55,12 @@ The default rate of **1.0 minute per stamina point** means:
 
 Want faster recovery? Set Minutes Per Stamina to `0.5` (half the nap time). Want it more punishing? Set it to `2.0`.
 
+## Translations
+
+Nap Time supports [SMAPI's i18n system](https://stardewvalleywiki.com/Modding:Translations). All player-facing text (dialogue options and config menu labels) can be translated.
+
+To add a translation, create a file in the `i18n` folder named with the [language code](https://stardewvalleywiki.com/Modding:Translations#Language_codes) (e.g. `fr.json`, `es.json`, `pt-BR.json`) and translate the values from `default.json`. Pull requests welcome!
+
 ## Compatibility
 
 - Stardew Valley 1.6+

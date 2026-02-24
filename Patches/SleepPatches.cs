@@ -78,11 +78,11 @@ namespace NapTime
             if (capped)
             {
                 int pct = (int)Math.Round(staminaRecovered / Game1.player.MaxStamina * 100);
-                napLabel = $"Nap until {timeStr} (regain {pct}% energy)";
+                napLabel = ModEntry.I18n.Get("nap-label.capped", new { time = timeStr, percent = pct });
             }
             else
             {
-                napLabel = $"Nap until {timeStr} (regain full energy)";
+                napLabel = ModEntry.I18n.Get("nap-label.full", new { time = timeStr });
             }
 
             // Create custom dialogue with Nap + Go to Bed + Cancel

@@ -10,11 +10,13 @@ namespace NapTime
     {
         internal static ModConfig Config;
         internal static IMonitor ModMonitor;
+        internal static ITranslationHelper I18n;
 
         public override void Entry(IModHelper helper)
         {
             Config = helper.ReadConfig<ModConfig>();
             ModMonitor = Monitor;
+            I18n = helper.Translation;
 
             var harmony = new Harmony(ModManifest.UniqueID);
             SleepPatches.Apply(harmony, Monitor);
@@ -38,16 +40,16 @@ namespace NapTime
                 mod: ModManifest,
                 getValue: () => Config.EnableNapping,
                 setValue: value => Config.EnableNapping = value,
-                name: () => "Enable Napping",
-                tooltip: () => "Show the nap option when interacting with a bed while missing energy."
+                name: () => I18n.Get("config.enable-napping.name"),
+                tooltip: () => I18n.Get("config.enable-napping.tooltip")
             );
 
             gmcm.AddNumberOption(
                 mod: ModManifest,
                 getValue: () => Config.MinutesPerStamina,
                 setValue: value => Config.MinutesPerStamina = value,
-                name: () => "Minutes Per Stamina",
-                tooltip: () => "How many in-game minutes of nap per stamina point restored. Higher = slower recovery. Default: 1.0 (135 missing stamina = ~2h20m nap).",
+                name: () => I18n.Get("config.minutes-per-stamina.name"),
+                tooltip: () => I18n.Get("config.minutes-per-stamina.tooltip"),
                 min: 0.1f,
                 max: 5.0f,
                 interval: 0.1f
@@ -57,8 +59,8 @@ namespace NapTime
                 mod: ModManifest,
                 getValue: () => Config.MaxWakeUpTime,
                 setValue: value => Config.MaxWakeUpTime = value,
-                name: () => "Latest Wake-Up Time",
-                tooltip: () => "Latest time a nap can extend to (24h format: 1200 = noon, 1800 = 6PM). Nap is capped at this time with partial energy recovery.",
+                name: () => I18n.Get("config.max-wake-up-time.name"),
+                tooltip: () => I18n.Get("config.max-wake-up-time.tooltip"),
                 min: 700,
                 max: 2400,
                 interval: 100
