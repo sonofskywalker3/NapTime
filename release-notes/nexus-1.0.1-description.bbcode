@@ -1,0 +1,68 @@
+[size=5][b]Nap Time[/b][/size]
+[b]Nap in your bed to regain energy without ending the day.[/b]
+A quick, free way to recover stamina after passing out in the mines or staying up too late — instead of pushing through the day at half energy. PC and Android.
+
+[line]
+[size=4][b]What's New in v1.0.1 — Translations[/b][/size]
+[b]Nap Time now supports SMAPI's translation system.[/b] All player-facing text (the bed dialogue options and the config labels) can be localized — drop a language file in the i18n folder and it's picked up automatically. Translation pull requests welcome.
+
+[line]
+[size=4][b]The problem[/b][/size]
+In vanilla Stardew Valley, if you pass out in the mines or stay up too late, you wake up with reduced energy and no free way to get it back — you either spend money, hunt forageables, or push through the day at half stamina. Early game, that really stings.
+
+[line]
+[size=4][b]The solution[/b][/size]
+Nap Time adds a third option to the bed dialogue: [b]take a nap[/b]. The game fades out, advances time, restores your stamina, and fades back in. No ending the day early — just a quick nap and back to work.
+
+[line]
+[size=4][b]How it works[/b][/size]
+When you interact with your bed while missing energy, a [b]Nap[/b] option appears alongside "Go to bed" and "Cancel":
+[quote][b]Nap until 8:20 AM (regain full energy)[/b]
+Go to bed for the night
+Cancel[/quote]
+[list]
+[*]Nap duration is calculated from how much energy you're missing.
+[*]The dialogue tells you exactly when you'll wake up and how much you'll recover.
+[*]If the wake-up time would exceed your configured limit, the nap is capped (partial recovery).
+[*]Works any time of day — after passing out, after heavy mining, whenever.
+[*]If you're already at full energy, the vanilla dialogue appears as normal.
+[/list]
+At the default 1.0 in-game minute per stamina point: ~70 missing stamina → wake 7:10 AM; ~135 → 8:20 AM; ~270 → 10:30 AM.
+
+[line]
+[size=4][b]Requirements[/b][/size]
+[list]
+[*]Stardew Valley 1.6+
+[*][url=https://smapi.io/]SMAPI[/url] 4.0+
+[*](Optional) [url=https://www.nexusmods.com/stardewvalley/mods/5098]Generic Mod Config Menu[/url] for in-game settings (Android players: the [url=https://github.com/sonofskywalker3/GenericModConfigMenu/releases]controller-enabled fork[/url])
+[/list]
+Works on [b]PC and Android[/b]; compatible with other mods (only patches bed interaction).
+
+[line]
+[size=4][b]Install[/b][/size]
+[list=1]
+[*]Install [url=https://smapi.io/]SMAPI[/url].
+[*]Download this mod and unzip it into your [font=Courier New]Stardew Valley/Mods[/font] folder (so you have [font=Courier New]Mods/NapTime/[/font]).
+[*]Run the game with SMAPI.
+[/list]
+
+[line]
+[size=4][b]Configuration[/b][/size]
+Settings live in [font=Courier New]config.json[/font] (created on first run) and can also be edited via GMCM:
+[list]
+[*][b]Enable Napping[/b] (default on) — show the nap option when interacting with a bed while missing energy.
+[*][b]Minutes Per Stamina[/b] (default 1.0, range 0.1–5.0) — in-game minutes of nap per stamina point. Lower = faster recovery, higher = more punishing.
+[*][b]Latest Wake-Up Time[/b] (default 6:00 PM, range 7:00 AM–midnight) — latest a nap can extend to; beyond it the nap is capped with partial recovery.
+[/list]
+
+[line]
+[size=4][b]Also by this author[/b][/size]
+[list]
+[*][url=https://www.nexusmods.com/stardewvalley/mods/41869][b]Android Consolizer[/b][/url] — Full console-style controller support for Stardew Valley on Android. Play the whole game on a gamepad.
+[*][url=https://www.nexusmods.com/stardewvalley/mods/47146][b]Cart Catalog[/b][/url] — Order from the Traveling Cart's daily stock; items arrive in a package on your porch the next morning.
+[*][url=https://www.nexusmods.com/stardewvalley/mods/47192][b]The Longest Year[/b][/url] — A roguelite time-loop: restore the Community Center within a year, or the Junimos rewind the seasons and you begin again, a little stronger. (Beta)
+[/list]
+
+[line]
+[size=4][b]Source[/b][/size]
+Open source (MIT) — [url=https://github.com/sonofskywalker3/NapTime][b]github.com/sonofskywalker3/NapTime[/b][/url]
