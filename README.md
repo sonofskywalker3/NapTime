@@ -61,6 +61,7 @@ Settings live in `config.json` (created on first run) and can also be edited via
 
 - [**Android Consolizer**](https://www.nexusmods.com/stardewvalley/mods/41869) — Full console-style controller support for Stardew Valley on Android. Play the whole game on a gamepad.
 - [**Cart Catalog**](https://www.nexusmods.com/stardewvalley/mods/47146) — Order from the Traveling Cart's daily stock; items arrive in a package on your porch the next morning.
+- [**The Longest Year**](https://www.nexusmods.com/stardewvalley/mods/47192) — A roguelite time-loop: restore the Community Center within a year, or the Junimos rewind the seasons and you begin again, a little stronger. (Beta)
 
 ## Source
 
